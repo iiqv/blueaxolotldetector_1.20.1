@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "blueaxolotldetector",
+	"version": "${version}",
+	"name": "BlueAxolotlDetector",
+	"description": "This mod detects when a blue axolotl is nearby and notifies you",
+	"authors": [
+		"Malboys",
+		"imRuin"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/blueaxolotldetector/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.malboys.blueaxolotldetector.BlueAxolotlMod"
+		],
+		"client": [
+			"net.malboys.blueaxolotldetector.BlueAxolotlModClient"
+		],
+		"fabric-datagen": [
+			"net.malboys.blueaxolotldetector.BlueAxolotlModDataGenerator"
+		]
+	},
+	"mixins": [
+		"blueaxolotldetector.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
